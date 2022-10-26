@@ -92,11 +92,11 @@ for i in range(knum):
 
 k = np.argmax(accuracy) * 2 + 1 #得到准确率最高的k值
 testlabels_predict = nn.predict(testdata,k) #预测测试集标签
-print('accuracy:',np.mean(testlabels_predict == validationlabels))
+print('accuracy:',np.mean(testlabels_predict == testlabels)) #计算测试集准确率
 
 #画不同k值时，准确率的折线图
 import matplotlib.pyplot as plt
 x = np.zeros(knum)
 for i in range(knum):
     x[i] = 2 * i + 1
-plt.plot(x,accuracy)
+plt.plot(x,accuracy) #横轴为k值，纵轴为验证集准确率
