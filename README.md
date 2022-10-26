@@ -1,0 +1,2 @@
+# studynotes_for_cs231n
+这是个人对于cs231n的学习笔记
