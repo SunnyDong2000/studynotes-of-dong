@@ -1,5 +1,5 @@
 # 基本信息
-本代码使用python版本的CIFAR-10数据集，下载地址为http://www.cs.toronto.edu/~kriz/cifar.html，数据集图片示意如下：
+本代码使用python版本的CIFAR-10数据集，下载地址为http://www.cs.toronto.edu/~kriz/cifar.html 数据集图片示意如下：
 ![cifar10](https://user-images.githubusercontent.com/116711111/197977393-5531bdff-ef91-4521-afc9-a8766fb6adfe.jpg)
 
 # 代码流程
