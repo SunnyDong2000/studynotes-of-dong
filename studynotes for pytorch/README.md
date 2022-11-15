@@ -1,3 +1,3 @@
-本笔记参考pytorch手册学习
+这是pytorch手册学习笔记
 
 https://github.com/zergtant/pytorch-handbook
