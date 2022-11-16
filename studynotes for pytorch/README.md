@@ -1,4 +1,4 @@
-这是pytorch手册的个人学习笔记,pytorch中文手册地址如下：
+这是pytorch手册的个人学习笔记，pytorch中文手册地址如下：
 
 https://github.com/zergtant/pytorch-handbook
 
