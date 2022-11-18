@@ -9,8 +9,7 @@
 
 最后在学习完pytorch后，利用pytorch这个工具完成卷积神经网络
 
-##pytorch的学习(pytorch手册+csdn)
-
+## pytorch的学习(pytorch手册+csdn)
 首先学习pytorch中的张量tensor的各种基本操作(创建、加法、与nparray互相转换、cpu和gpu之间移动等)，特别注意的是nparray和tensor互相转换时，共用同一块内存。
 
 之后了解pytorch的tenzor自带的求取梯度的方法。根据反向转播时最终的tensor是否为标量，决定是否必须要额外参数。
