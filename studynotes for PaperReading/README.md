@@ -1,6 +1,7 @@
 # Dropout BN LN.ipynb
 ## Dropout
 尝试解决一个过大的前馈神经网络应用到一个小的数据集上时对测试数据表现不佳的过拟合问题。
+撒
 
 提出论文：Improving neural networks by preventing co-adaptation of feature detectors
 ## BN层
