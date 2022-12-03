@@ -7,6 +7,7 @@
 在pytorch中采用torch.nn.Dropout(p)函数来实现dropout层，p表示神经元有p的概率失活。
 
 提出论文：Improving neural networks by preventing co-adaptation of feature detectors
+
 ## BN层
 尝试解决内部协方差偏移(internal covariate shift)，某些情况下可以代替Dropout。
 
@@ -15,6 +16,7 @@
 在pytorch中采用torch.nn.BatchNorm2d(n)函数来实现卷积网络的BN层，n是卷积核的个数，也就是该层网络输出的特征数目。
 
 提出论文：Batch normalization: Accelerating deep network training by reducing internal covariate shift
+
 ## LN层
 与BN层类似，实现了网络内部的归一化，但归一化维度不同。
 
@@ -30,3 +32,8 @@
 横轴为epoch数目，纵轴为分类准确率，虚线为训练集，实线为测试集。红色为对比数据(不加入dropout、BN或LN)，蓝色为dropout，绿色为BN，粉色为LN。其余的网络结构、初始化seed、训练集、测试集等保持一致。
 
 从结果上看dropout防止了过拟合，但同时训练效果不佳，现在也已经几乎不使用了。BN和LN相较于dropout训练速度要快不少，效果也比较类似，性能的提升不多。猜测原因为测试用的网络为3层的网络，不够深，内部协方差偏移的影响不大，因此对比不大。
+
+## 补充
+归一化的方法除了BN和LN外，还有Instance Normalization和Group Normalization，这里并未进行实验。已有一些通俗易懂的解释，这里贴出网址：
+
+https://blog.csdn.net/xu_fu_yong/article/details/93721585
